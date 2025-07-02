@@ -4,7 +4,7 @@ O que e um neurônio,  Neurônio consiste em 4 Estruturas:
 	Corpos Celulares (Soma) : processa os sinais Recebidos
 	Axônio: Transmite o sinal para outros neurônios, músculos ou glândulas
 	Sinapse: e a junção entre neurônios onde ocorre a transmissão do sinal                                                                                                                                                                                                     
-             ![[NeuronioReal.png]]                           
+             ![[NeuronioReal.png]](https://github.com/NotNumberFour/IAClassificadora/blob/main/Neuronio/NeuronioReal.png?raw=true)                          
  
     
 O que e um neurônio Artificial, Consistem em 4 Estruturas:
