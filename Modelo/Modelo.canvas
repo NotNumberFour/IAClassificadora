@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"c05a0ad37200e90a","type":"text","text":"[[Letra_O.png]]","x":-620,"y":-320,"width":180,"height":60,"color":"1"},
+		{"id":"2f7f669908433bdf","x":-400,"y":-320,"width":160,"height":60,"color":"2","type":"text","text":"[[Camada.canvas|Camada]]"},
+		{"id":"07f89fe0b09d10da","type":"text","text":"[[Camada.canvas|Camada]]","x":-160,"y":-320,"width":160,"height":60,"color":"2"},
+		{"id":"03e0abc4d7877663","type":"text","text":"[[Camada.canvas|Camada]]","x":60,"y":-320,"width":160,"height":60,"color":"2"},
+		{"id":"ea3a3e9b4eb74b74","x":280,"y":-320,"width":160,"height":60,"color":"5","type":"text","text":"Classificacao"}
+	],
+	"edges":[
+		{"id":"df61010cb774f2cb","fromNode":"c05a0ad37200e90a","fromSide":"right","toNode":"2f7f669908433bdf","toSide":"left","color":"1"},
+		{"id":"39978fa03430ebae","fromNode":"2f7f669908433bdf","fromSide":"right","toNode":"07f89fe0b09d10da","toSide":"left","color":"2"},
+		{"id":"9227f7c0e30babca","fromNode":"07f89fe0b09d10da","fromSide":"right","toNode":"03e0abc4d7877663","toSide":"left","color":"2"},
+		{"id":"516b66b377bf6d6a","fromNode":"03e0abc4d7877663","fromSide":"right","toNode":"ea3a3e9b4eb74b74","toSide":"left","color":"2"}
+	]
+}

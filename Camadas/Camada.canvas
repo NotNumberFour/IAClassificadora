@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"70e6fe6d9b5c65af","type":"text","text":"Inputs","x":-395,"y":-127,"width":115,"height":60,"color":"1"},
+		{"id":"ab8900af60a8ad4a","type":"text","text":"Neurônio","x":-180,"y":-207,"width":220,"height":60,"color":"2"},
+		{"id":"e64efb57dd9683a2","type":"text","text":"Ultima camada ?","x":120,"y":-127,"width":200,"height":60,"color":"3"},
+		{"id":"a1dde865dc33521a","type":"text","text":"Softmax","x":440,"y":-177,"width":250,"height":60,"color":"4"},
+		{"id":"ada23de36be18fc3","type":"text","text":"Proxima Camada","x":440,"y":-70,"width":250,"height":60,"color":"4"},
+		{"id":"6030f002e633d365","type":"text","text":"Neurônio","x":-180,"y":-127,"width":220,"height":60,"color":"2"},
+		{"id":"80f10bc88478fb9c","type":"text","text":"Neurônio","x":-180,"y":-40,"width":220,"height":60,"color":"2"}
+	],
+	"edges":[
+		{"id":"315a288a3b1b9abd","fromNode":"70e6fe6d9b5c65af","fromSide":"right","toNode":"ab8900af60a8ad4a","toSide":"left","color":"1"},
+		{"id":"6f195aa6057c0887","fromNode":"ab8900af60a8ad4a","fromSide":"right","toNode":"e64efb57dd9683a2","toSide":"left","color":"2"},
+		{"id":"9a6f0efa48d1bf7f","fromNode":"e64efb57dd9683a2","fromSide":"right","toNode":"a1dde865dc33521a","toSide":"left","color":"3","label":"Sim"},
+		{"id":"4c9836e595a09507","fromNode":"e64efb57dd9683a2","fromSide":"right","toNode":"ada23de36be18fc3","toSide":"left","color":"3","label":"Não"},
+		{"id":"512a065a9d7d63f5","fromNode":"70e6fe6d9b5c65af","fromSide":"right","toNode":"6030f002e633d365","toSide":"left","color":"1"},
+		{"id":"af3445c8568a87e7","fromNode":"70e6fe6d9b5c65af","fromSide":"right","toNode":"80f10bc88478fb9c","toSide":"left","color":"1"},
+		{"id":"410ce224c7401bf1","fromNode":"80f10bc88478fb9c","fromSide":"right","toNode":"e64efb57dd9683a2","toSide":"left","color":"2"},
+		{"id":"44ce6f2c3a3570da","fromNode":"6030f002e633d365","fromSide":"right","toNode":"e64efb57dd9683a2","toSide":"left","color":"2"}
+	]
+}

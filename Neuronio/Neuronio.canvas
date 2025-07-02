@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"aed4e6a78a7bf0d4","type":"text","text":"W","x":60,"y":-129,"width":64,"height":60,"color":"2"},
+		{"id":"67639c05648fa45a","type":"text","text":"Somatoria","x":200,"y":-129,"width":142,"height":60,"color":"4"},
+		{"id":"455383f6d8836e14","type":"text","text":"Sigmoid","x":400,"y":-129,"width":220,"height":60,"color":"3"},
+		{"id":"48649f1dd285c250","type":"text","text":"X","x":-100,"y":-129,"width":61,"height":60,"color":"1"},
+		{"id":"0f60a61ce9b54ba6","type":"text","text":"Bias","x":219,"y":-260,"width":104,"height":60,"color":"5"},
+		{"id":"236568adf382f4fb","type":"text","text":"Y","x":700,"y":-129,"width":60,"height":60,"color":"6"}
+	],
+	"edges":[
+		{"id":"b27a140b59a0ee2d","fromNode":"48649f1dd285c250","fromSide":"right","toNode":"aed4e6a78a7bf0d4","toSide":"left","color":"1"},
+		{"id":"f8734f68eb6d1947","fromNode":"aed4e6a78a7bf0d4","fromSide":"right","toNode":"67639c05648fa45a","toSide":"left","color":"2"},
+		{"id":"a4ec114ccf5e20ed","fromNode":"67639c05648fa45a","fromSide":"right","toNode":"455383f6d8836e14","toSide":"left","color":"4"},
+		{"id":"ff3046cfce687460","fromNode":"455383f6d8836e14","fromSide":"right","toNode":"236568adf382f4fb","toSide":"left","color":"3"},
+		{"id":"09896484f549d4f5","fromNode":"0f60a61ce9b54ba6","fromSide":"bottom","toNode":"67639c05648fa45a","toSide":"top","color":"5"}
+	]
+}
