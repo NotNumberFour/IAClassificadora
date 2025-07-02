@@ -16,3 +16,10 @@ O que e um neurônio Artificial, Consistem em 4 Estruturas:
 
 
 
+
+
+	![[neuronio.png]](https://github.com/NotNumberFour/IAClassificadora/blob/main/Neuronio/neuronio.png?raw=true)
+
+	![[camada.png]](https://github.com/NotNumberFour/IAClassificadora/blob/main/Camadas/camada.png?raw=true)
+
+	![[modelo.png]](https://github.com/NotNumberFour/IAClassificadora/blob/main/Modelo/modelo.png?raw=true)
