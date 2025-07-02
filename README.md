@@ -13,3 +13,6 @@ O que e um neurônio Artificial, Consistem em 4 Estruturas:
 	Soma ponderada: calcula uma soma das entradas e multiplica pelo seus pesos,
 	Função de Ativação: transforma essa soma em um valo,final                                                                                                                                                                                                                                                                                                                                                              
     				![[NeuronioFormula.png]](https://github.com/NotNumberFour/IAClassificadora/blob/main/Neuronio/NeuronioFormula.png?raw=true)
+
+
+
