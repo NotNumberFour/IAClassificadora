@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,10 +7,22 @@ namespace Engine.Estrutura
 {
     public class Neuronio
     {
-        public required float[] Weight { get; set; }
+        public float[] Weight { get; set; }
         public float Bias { get; set; }
-
-
+        public Random Random = new Random();
+        public Neuronio(int quantidadeEntrada, float Bias)
+        {
+            this.Weight = new float[quantidadeEntrada];
+            this.Bias = Bias;
+            this.loadWeight();
+        }
+        public void loadWeight()
+        {
+            for (int i = 0; i < Weight.Length; i++)
+            {
+                Weight[i] = (float)Random.NextDouble();
+            }
+        }
         public float Somatoria(float[] X)
         {
             float sum = 0;
@@ -22,10 +33,16 @@ namespace Engine.Estrutura
             return sum + Bias;
         }
 
-        public float Sigmoid(float z)
-        {
-            double result = 1 / (1 + Math.Exp(-z));
-            return float.Parse(result.ToString());
+        
+        public void AjustaPeso(float[] X, float erro) {
+
+            for (int i = 0; i < Weight.Length; i++) {
+
+                Weight[i] -= erro * X[i];
+                Console.WriteLine(Weight[i]);
+            }
+            Bias -= erro;
+            
         }
     }
 }
