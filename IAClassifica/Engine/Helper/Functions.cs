@@ -14,6 +14,16 @@ namespace Engine.Helper
             return result;
         }
 
+        public static float[] Sigmoid(float[] z)
+        {
+            float[] results = new float[z.Length];
+            for (int i = 0; i < z.Length; i++)
+            {
+                results[i] = 1.0f / (1.0f + MathF.Exp(-z[i]));
+                
+            }
+            return results;
+        }
         public static float[] SigmoidDerivada(float[] saida)
         {
             return saida.Select(x => (float)(x * (1 - x))).ToArray();

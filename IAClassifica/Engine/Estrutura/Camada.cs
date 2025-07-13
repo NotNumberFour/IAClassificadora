@@ -15,7 +15,7 @@ namespace Engine.Estrutura
         {
             for (int i = 0; i < QuantidadeNeuronio; i++) {
 
-                Neuronio.Add(new Neuronio(QuantidadeEntrada, 0.1f));
+                Neuronio.Add(new Neuronio(QuantidadeEntrada, 0.01f));
             }
         }
 
@@ -26,10 +26,9 @@ namespace Engine.Estrutura
             {
                 for (int j = 0; j < Neuronio.Count; j++)
                 {
-                    if (!sigmoid)
+                    
                         result[i] = Neuronio[j].Somatoria(x);
-                    else
-                        result[i] = Functions.Sigmoid(Neuronio[j].Somatoria(x));
+                  
                 }
             }
 

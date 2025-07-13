@@ -10,11 +10,11 @@ namespace Engine
         public int Epocas = 10;
         List<Camada> camadas = new List<Camada>
         {
+            new Camada(28*28,28*28),
             new Camada(10,28*28),
-            new Camada(10,10),
         };
         List<FImage> imagens = new FImage().CarregarImagemTexto("C:/GIT/C3/Classificação/Engine/Dataset/emnist-byclass-train.csv");
-        public float TaxaAprendizado = 0.1f;
+        public float TaxaAprendizado = 0.0001f;
 
         public int Prever(float[] inputs)
         {
@@ -48,11 +48,15 @@ namespace Engine
                     {
 
                         ativacao = camadas[i].Somatoria(ativacao, !(i == camadas.Count - 1));
-                        if(i == camadas.Count - 1)
+                        if (i == camadas.Count - 1)
                         {
                             result[i] = Functions.Softmax(ativacao);
-                        }else result[i] = ativacao;
-
+                        }
+                        else
+                        {
+                            result[i] = Functions.Sigmoid(ativacao);
+                            result[i] = ativacao;
+                        }
                     }
 
                     int previsto = Array.IndexOf(result.Last(), result.Last().Max());
@@ -79,6 +83,7 @@ namespace Engine
                         for (int neuronioIndex = 0; neuronioIndex < camada.Neuronio.Count; neuronioIndex++)
                         {
                             camada.AjustaNeuronios(entradaAtual, TaxaAprendizado , erro , derivada);
+                            FGrafo.GerarMapaPesos16x16(camada, "C:/GIT/JS/IAClassificadora/IAClassificadora/IAClassifica/Engine/Dataset/Fgrafo/", epocas, neuronioIndex);
                         }
 
                     }

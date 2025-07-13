@@ -51,7 +51,7 @@ namespace Engine.Estrutura
                     int count = 0;
                     while (!reader.EndOfStream)
                     {
-                        if(count < 500)
+                        if(count < 697932)
                         {
                             string linha = reader.ReadLine();
                             string[] valores = linha.Split(',');
